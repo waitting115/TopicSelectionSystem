@@ -1,0 +1,42 @@
+.all {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+.title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.title view {
+  font-size: 50rpx;
+  font-family: kaiti;
+}
+.content {
+  width: 100%;
+
+}
+.item {
+  background: #fff;
+  margin:40rpx 5%;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  padding: 10rpx;
+}
+/* .image {
+  width: 100rpx;
+  height: 100rpx;
+} */
+.name {
+  line-height: 50rpx;
+}
+.choose {
+  line-height: 50rpx;
+  color: #f40;
+  text-indent: 65rpx;
+}

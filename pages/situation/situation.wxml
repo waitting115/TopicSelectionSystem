@@ -1,0 +1,13 @@
+<view class="all">
+  <view class="title">
+    <view>选 题 情 况</view>
+  </view>
+  <view class="content">
+    <view class="item" wx:for="{{allUser}}" wx:key="{{index}}" >
+      <!-- <image src="/icons/dollar5.png" class="image"></image> -->
+      <view class="name">{{item.name}}小组：</view>
+      <view class="choose" wx:if="{{item.choose != ''}}">{{item.choose}}</view>
+      <view class="choose" wx:else>未选题</view>
+    </view>
+  </view>
+</view>

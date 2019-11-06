@@ -1,0 +1,21 @@
+<view class="all">
+  <view class="title">
+    <h1 class="title1">管理信息系统原理</h1>
+    <h2 class="title2">选题系统</h2>
+  </view>
+  <view class="loginModel">
+    <form bindsubmit="formSubmit">
+      <view class="userView">
+        <label for="user" class="userLabel">账号：</label>
+        <input class="user" name='user' type="number" value="{{form_info}}"></input>
+      </view>
+      <view class="passwordView">
+        <label for="password" class="passwordLabel">密码：</label>
+        <input class="password" name='password' type='password' value="{{form_info}}"></input>
+      </view>
+      <view class="submitView">
+        <button class="submit" name='submit' type="primary" form-type="submit" >登 录</button>
+      </view>
+    </form>
+  </view>
+</view>

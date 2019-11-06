@@ -1,0 +1,34 @@
+<view class="all">
+  <view class="title">
+    <view>个人主页</view>
+  </view>
+  
+  <view class="content">
+   <view>欢迎你！{{user.name}}</view>
+    <view class="top">
+      <view class="contentTitle">已选课题：</view>
+      <view class="contentTitleMsg">{{user.choose}}</view>
+    </view>
+    <view class="buttom">
+      <view class="contentTime">选课时间：</view>
+      <view class="contentTimeMsg">{{user.time}}</view>
+    </view>
+  </view>
+
+  <view class="content" wx:if="{{user.chance == 0}}">
+    <view class="top">
+      <view class="contentTitle">历史选题：</view>
+      <view class="contentTitleMsg">{{user.lowChoose}}</view>
+    </view>
+    <view class="buttom">
+      <view class="contentTime">历史选课时间：</view>
+      <view class="contentTimeMsg">{{user.lowTime}}</view>
+    </view>
+  </view>
+
+  <button class="modifySubject" bindtap="clickModify"  type="primary" wx:if="{{user.chance == 1}}">修 改 课 题</button>
+  <view class="modifySubjectPrompt" wx:if="{{user.chance == 1}}">每个人仅有一次修改的机会哦！</view>
+  <view class="modifySubjectPrompt" wx:else>你已经没有修改课题的机会了</view>
+
+  <button class="logOut" type="primary" bindtap="clickLogOut">退 出 登 录</button>
+</view>

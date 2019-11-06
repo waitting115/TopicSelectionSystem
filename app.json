@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/my/my",
+    "pages/situation/situation",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "选课系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff3a59",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "选题主页",
+        "iconPath": "icons/dollar6.png",
+        "selectedIconPath": "icons/dollar4.png"
+      },
+      {
+        "pagePath": "pages/situation/situation",
+        "text": "选题情况",
+        "iconPath": "icons/dollar3.png",
+        "selectedIconPath": "icons/dollar7.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人主页",
+        "iconPath": "icons/dollar.png",
+        "selectedIconPath": "icons/dollar5.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
