@@ -38,6 +38,18 @@
   justify-content: center;
   align-items: center;
 }
+.title {
+  font-size: 30rpx;
+}
+.noStatus {
+  font-size: 20rpx;
+  width: 15%;
+}
+.yesStatus {
+  font-size: 20rpx;
+  width: 15%;
+  color: #F40;
+}
 /* .foot {
   width: 100%;
   height: auto;
@@ -45,4 +57,16 @@
   text-align: center;
   color: #8c8c8c;
   margin: 20rpx 0;
+} */
+/* .title {
+  width: 100%;
+}
+.xiangqing {
+  width: 50rpx;
+  height: 50rpx;
+  background: red;
+}
+.check {
+  width: 50%;
+  background: yellow;
 } */

@@ -1,0 +1,6 @@
+<view class="all">
+  <h1 class="title">{{title}}</h1>
+  <view class="details">{{questionDetails}}</view>
+  <button class="choose" type="primary" bindtap="chooseQuestion" wx:if="{{!state}}">选 择 此 题</button>
+  <button class="alreadyChoose" wx:else>此 题 已 选</button>
+</view>

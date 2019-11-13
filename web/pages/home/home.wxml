@@ -3,8 +3,10 @@
     <view>所 有 题 目</view>
   </view>
   <view class="content">
-    <view class="item" wx:for="{{questions}}" wx:key="{{index}}" bindtap="chooseQuestion" data-title="{{item}}">
-      <view>{{item}}</view>
+    <view class="item" wx:for="{{questionBank}}" wx:key="{{index}}" bindtap="chooseDetails" data-title="{{item.title}}">
+      <view class="title">{{item.title}}</view>
+      <view class="noStatus" wx:if="{{!item.state}}">未选题</view>
+      <view class="yesStatus" wx:else>已选题</view>
     </view>
   </view>
   <!-- <view class="foot">你可别扒拉了，到底了都！</view> -->
