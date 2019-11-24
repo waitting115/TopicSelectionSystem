@@ -5,7 +5,7 @@ let app = getApp();
 Page({
   data: {
     title: '',
-    questionDetails: '',
+    // questionDetails: '',
     state: true
   },
   onLoad: function (options) {
@@ -17,7 +17,7 @@ Page({
       if(questionBank[i].title === title) {
         // console.log('找到了')
         this.setData({
-          questionDetails: questionBank[i].details,
+          // questionDetails: questionBank[i].details,
           title: title,
           state: questionBank[i].state
         })

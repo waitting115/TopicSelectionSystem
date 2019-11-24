@@ -7,15 +7,20 @@ Page({
     questionBank: []
   },
   onLoad: function (options) {
-    // let a = '欢迎你' + app.globalData.user.name + '!';
-    
-    // // console.log(a);
-    // wx.showToast({
-    //   title: a,
-    // })
-    let msg = [];
-    let questionBank = app.globalData.questionBank;
-    console.log(questionBank)
+
+    //向后端发起请求，将所有的题发过来然后渲染到上面
+    wx.request({
+      url: app.globalData.url + '/home',
+      data: {},
+      method: 'GET',
+      success: (res) => {
+        console.log('返回的数据',res.data)
+        //将返回的数据that.setData({})存到data的questionBank中
+      }
+    })
+    // let msg = [];
+    // let questionBank = app.globalData.questionBank;
+    // console.log(questionBank)
     // for(let i = 0; i < questionBank.length; i ++) {
     //   if (questionBank[i].state == false)//只要未选取的题目
     //   msg.push(questionBank[i].title);

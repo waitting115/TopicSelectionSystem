@@ -10,7 +10,7 @@ App({
     // 登录
     wx.login({
       success: res => {
-        console.log('login-success', res.code);
+        // console.log('login-success', res.code);
         if (res.code) {
           // wx.request({
           //   url: that.globalData.url,
@@ -55,7 +55,6 @@ App({
     })
   },
   onLoad: function () {
-
     //后台做
 
     // let userName = this.globalData.userName;
@@ -72,11 +71,11 @@ App({
   globalData: {
     userInfo: null,
     userNum: 0,
-    url:'http://127.0.0.1:2000',
+    url:'http://127.0.0.1:3000',
     userName: '王敬伟',
     
-    //当前用户，信息在登录时候绑定到指定的数据库中的用户
-    user: {},
+    //当前用户账号，信息在需要的时候用账号向后台请求
+    user: '',
 
     //数据库内容
     dataBaseMsg : [
@@ -88,7 +87,8 @@ App({
         time: '2019/11/06 13:43:07',//选题的时间
         chance: 1,//改题机会  1/0
         lowChoose: '',//如果改过题，这是上一个题
-        lowTime: ''//如果改过题，这是上一个题的时间
+        lowTime: '',//如果改过题，这是上一个题的时间
+        team:[],
       },
       {
         name: '某',
@@ -98,7 +98,8 @@ App({
         time: '2019/11/06 13:43:07',
         chance: 1,
         lowChoose: '',
-        lowTime: ''
+        lowTime: '',
+        team:[]
       },
       {
         name: '某某',
